@@ -242,7 +242,7 @@ menu {
   .hero__link-blue a {
     width: 100%;
     max-width: 358px;
-    padding: 24px 130px;
+    padding: 24px 26vw;
     font-family: "dm sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
@@ -262,7 +262,7 @@ menu {
   .hero__link-grey a {
     width: 100%;
     max-width: 358px;
-    padding: 24px 140px;
+    padding: 24px 28vw;
     font-family: "dm sans", sans-serif;
     font-size: 16px;
     font-weight: 600;
