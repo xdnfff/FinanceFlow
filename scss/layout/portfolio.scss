@@ -1,0 +1,184 @@
+.portfolio {
+  &__content {
+    padding: 180px 0 0 0;
+    margin-top: 180px;
+
+    @media (max-width: 768px) {
+      margin-top: 0;
+      padding: 40px 20px;
+    }
+  }
+  &__title {
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include font("dm sans", 18px);
+
+      @include media(768px) {
+        @include font("dm sans", 16px, 400);
+        margin-bottom: -20px;
+      }
+    }
+  }
+  &__list {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media(768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    p {
+      @include font("dm sans", 18px, 800, 0);
+    }
+
+    @include media(768px) {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 20px;
+    }
+  }
+
+  &__main-title {
+    margin-top: 140px;
+    h3 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include font("dm sans", 42px, 600);
+
+      @include media(768px) {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @include font("dm sans", 36px, 600);
+      }
+    }
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include font("dm sans", 18px, 200);
+
+      @include media(768px) {
+        margin-top: 15px;
+        @include font("dm sans", 16px);
+      }
+    }
+    @include media(768px) {
+      margin-top: 45px;
+      padding: 20px 0;
+    }
+  }
+  &__grid {
+    margin-top: 80px;
+    display: grid;
+    grid-template-areas:
+      "grid1 grid3 grid4"
+      "grid2 grid3 grid5";
+    gap: 30px;
+
+    @include media(768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__grid-1 {
+    grid-area: grid1;
+  }
+  &__grid-2 {
+    grid-area: grid2;
+  }
+  &__grid-3 {
+    img {
+      margin-left: 28px;
+      margin-top: 20px;
+
+      @include media(768px) {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+    grid-area: grid3;
+  }
+  &__grid-4 {
+    grid-area: grid4;
+  }
+  &__grid-5 {
+    grid-area: grid5;
+  }
+  .grid {
+    width: 100%;
+    max-width: 348px;
+    background-color: $color-box;
+    padding: 30px 20px;
+    border-radius: 30px;
+
+    h4 {
+      margin-top: 10px;
+      @include font("dm sans", 18px, 600);
+    }
+    p {
+      margin-top: 10px;
+      @include font("dm sans", 16px, 200);
+    }
+  }
+  .grid3 {
+    width: 100%;
+    max-width: 477px;
+    background-color: $color-btn;
+    padding: 40px 30px 0 30px;
+    border-radius: 30px;
+
+    h4 {
+      @include font("dm sans", 20px, 600);
+    }
+    p {
+      margin-top: 30px;
+      @include font("dm sans", 16px, 200);
+
+      @include media(768px) {
+        margin-top: 20px;
+      }
+    }
+
+    @include media(768px) {
+      width: 100%;
+      max-width: 348px;
+      padding: 20px 20px 0 20px;
+    }
+  }
+  &__link {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__link-btn a {
+    padding: 24px 27px;
+    background-color: $color-btn;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+    @include font("dm sans", 12px, 600, 0);
+  }
+}

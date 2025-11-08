@@ -1,0 +1,103 @@
+.hero {
+  position: relative;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+  }
+  &__title {
+    margin-top: 224px;
+    h1 {
+      width: 100%;
+      max-width: 738px;
+      @include font("dm sans", 62px, 600, 1.2);
+
+      @media (max-width: 768px) {
+        @include font("dm sans", 38px, 600, 1.2);
+      }
+    }
+    p {
+      width: 100%;
+      max-width: 568px;
+      @include font("dm sans", 16px, 0, 1.4);
+
+      @media (max-width: 768px) {
+        margin-top: 12px;
+      }
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-top: 40px;
+
+    @media (max-width: 768px) {
+      margin-top: 68px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 62px;
+    }
+  }
+  &__link-blue a {
+    padding: 17px 22px;
+    background-color: $color-btn;
+    border-radius: 80px;
+    @include font("dm sans", 12px, 600, 0);
+
+    @media (max-width: 768px) {
+      width: 100%;
+      max-width: 358px;
+      padding: 24px 130px;
+      @include font("dm sans", 16px, 600, 0);
+    }
+  }
+  &__link-grey a {
+    padding: 17px 28px;
+    background-color: #ffffff10;
+    border-radius: 80px;
+    @include font("dm sans", 12px, 600, 0);
+
+    @media (max-width: 768px) {
+      width: 100%;
+      max-width: 358px;
+      padding: 24px 140px;
+      @include font("dm sans", 16px, 600, 0);
+    }
+  }
+  &__img {
+    position: absolute;
+    left: 800px;
+    top: 124px;
+    img {
+      max-width: 971px;
+      @media (max-width: 768px) {
+        width: 100%;
+        max-width: 358.29px;
+        display: block;
+      }
+    }
+    @media (max-width: 768px) {
+      margin-top: 64px;
+      position: static;
+      left: auto;
+      top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 358.29px;
+    }
+  }
+}
