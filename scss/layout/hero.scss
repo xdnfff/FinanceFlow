@@ -47,32 +47,36 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: 62px;
+      gap: 30px;
     }
   }
   &__link-blue a {
-    padding: 17px 22px;
+    display: inline;
+    padding: 18px 22px;
     background-color: $color-btn;
     border-radius: 80px;
     @include font("dm sans", 12px, 600, 0);
 
     @media (max-width: 768px) {
+      display: block;
       width: 100%;
-      max-width: 358px;
-      padding: 24px 26vw;
+      padding: 22px 15vw;
+      margin: 0 auto;
       @include font("dm sans", 16px, 600, 0);
     }
   }
   &__link-grey a {
-    padding: 17px 28px;
+    display: inline;
+    padding: 19px 30px;
     background-color: #ffffff10;
     border-radius: 80px;
     @include font("dm sans", 12px, 600, 0);
 
     @media (max-width: 768px) {
+      display: block;
       width: 100%;
-      max-width: 358px;
-      padding: 24px 28vw;
+      padding: 24px 18vw;
+      margin: 0 auto;
       @include font("dm sans", 16px, 600, 0);
     }
   }

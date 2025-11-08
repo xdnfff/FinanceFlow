@@ -1,0 +1,85 @@
+.token {
+  position: relative;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+
+    &__phone {
+      img {
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+
+    @include media(768px) {
+      margin-top: 26px;
+      padding: 40px 20px;
+      flex-direction: column;
+    }
+  }
+  &__title {
+    h5 {
+      width: 100%;
+      max-width: 475px;
+      @include font("dm sans", 42px, 600);
+    }
+    p {
+      margin-top: 20px;
+      width: 100%;
+      max-width: 470px;
+      @include font("dm sans", 18px, 200);
+    }
+    @include media(768px) {
+      margin-top: 40px;
+    }
+  }
+  &__list {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      width: 46px;
+      height: 46px;
+    }
+  }
+  &__img {
+    position: absolute;
+    left: 680px;
+    top: 2870px;
+    img {
+      max-width: 971px;
+      @media (max-width: 768px) {
+        width: 100%;
+        max-width: 358.29px;
+        display: block;
+      }
+    }
+    @media (max-width: 768px) {
+      margin-top: 64px;
+      position: static;
+      left: auto;
+      top: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 358.29px;
+    }
+  }
+  &__margin {
+    margin-top: 200px;
+
+    @include media(768px) {
+      margin-top: -30px;
+    }
+  }
+}
