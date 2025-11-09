@@ -74,6 +74,11 @@
       width: 100%;
       max-width: 358.29px;
     }
+    @media (min-width: 1620px) {
+      position: absolute;
+      left: 1000px;
+      top: 2870px;
+    }
   }
   &__margin {
     margin-top: 200px;
