@@ -18,6 +18,18 @@
       padding: 40px 20px;
       flex-direction: column;
     }
+    iframe {
+      border-radius: 80px;
+
+      @include media(768px) {
+        margin-top: 40px;
+        width: 100%;
+        height: 206px;
+        max-width: 370px;
+        border: none;
+        border-radius: 0;
+      }
+    }
   }
   &__title {
     h5 {

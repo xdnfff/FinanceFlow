@@ -1,0 +1,54 @@
+.download {
+  h6 {
+    @include font("dm sans", 42px, 600);
+    margin-bottom: 20px;
+
+    @include media(768px) {
+      @include font("dm sans", 26px, 600);
+    }
+  }
+  &__content {
+    margin-top: 150px;
+
+    @include media(768px) {
+      padding: 20px 40px;
+    }
+  }
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media(768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+  &__ios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 563px;
+    background-color: #010d50;
+    border-radius: 40px;
+    padding: 40px 40px 0 40px;
+  }
+  &__ios-link {
+    width: 193px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: $color-btn;
+    border-radius: 80px;
+    border: none;
+    padding: 16px 27px;
+  }
+  &__phones {
+    width: 100%;
+    margin-top: 40px;
+    max-width: 400px;
+  }
+}

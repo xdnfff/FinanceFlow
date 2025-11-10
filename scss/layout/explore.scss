@@ -8,7 +8,7 @@
   height: 393px;
 
   @include media(768px) {
-    height: 846px;
+    height: 696px;
     margin-top: 64px;
   }
   &__content {
@@ -24,6 +24,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-top: 178px;
     }
   }
   &__title {
@@ -82,6 +83,8 @@
     max-width: 540px;
 
     @include media(768px) {
+      margin-top: 0;
+      margin-bottom: 0;
       width: 100%;
       max-width: 380px;
     }

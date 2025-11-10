@@ -1,0 +1,100 @@
+.footer {
+  display: block;
+  width: 100%;
+  background: $color-box;
+  margin-top: 150px;
+
+  &__content {
+    padding: 0 20px 50px 20px;
+    hr {
+      margin-bottom: 15px;
+      margin-top: 100px;
+      border: none;
+      height: 2px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    span {
+      @include font("dm sans", 14px);
+    }
+    @include media(768px) {
+      padding: 0 20px;
+    }
+  }
+  &__logo {
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media(768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &__middle {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include media(768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  &__menu {
+    h5 {
+      @include font("dm sans", 16px, 600);
+    }
+    span {
+      margin-top: 10px;
+      background-color: #fff;
+      display: block;
+      padding: 1px;
+    }
+  }
+  &__item-menu {
+    @include font("dm sans", 14px, 400);
+    margin-top: 5px;
+  }
+
+  &__links {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &__upload {
+    width: 100%;
+    max-width: 509px;
+    background-color: #ffffff10;
+    padding: 40px 40px;
+    border-radius: 40px;
+
+    h5 {
+      @include font("dm sans", 18px, 400);
+    }
+    p {
+      margin-top: 10px;
+      width: 100%;
+      max-width: 420px;
+    }
+  }
+  &__apps {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include media(768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
